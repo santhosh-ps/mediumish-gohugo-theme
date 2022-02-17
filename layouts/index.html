@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-    <div class="main-content">
+    <div class="main-content index-main">
         <header class="text-center">
             {{ with .Site.Params.index.picture }}
                 <img src="{{ . | urlize | relURL }}" class="rounded-circle text-center index-image">
