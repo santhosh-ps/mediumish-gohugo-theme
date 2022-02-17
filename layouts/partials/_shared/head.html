@@ -21,11 +21,12 @@
 
 	{{ $additional := resources.Get "/css/additional.css" | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $additional.RelPermalink | absURL }}" integrity="{{ $additional.Data.Integrity }}">
+	{{ $overrides := resources.Get "/css/overrides.css" | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $overrides.RelPermalink | absURL }}" integrity="{{ $overrides.Data.Integrity }}">
 
 	<!-- Custom css -->
 	{{ range .Site.Params.customCSS -}}
 	{{ $style := resources.Get . }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen">
-	<link href="{{ "/css/overrides.css" | urlize | relURL }}" rel="stylesheet">
 	{{- end }}
 </head>
