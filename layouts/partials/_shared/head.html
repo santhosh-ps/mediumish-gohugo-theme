@@ -26,5 +26,6 @@
 	{{ range .Site.Params.customCSS -}}
 	{{ $style := resources.Get . }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen">
+	<link href="{{ "/css/overrides.css" | urlize | relURL }}" rel="stylesheet">
 	{{- end }}
 </head>
