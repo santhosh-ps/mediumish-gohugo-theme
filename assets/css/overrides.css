@@ -1,14 +1,23 @@
+@media screen and (max-width:640px) {
+    #avtr{
+       display: none;
+    }
+}
 .portfolio-main {
     max-width: 960px;
     margin: 0 auto;
 }
 
 .name-section{
-    gap: 5rem;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 a.social-icon-link {
     padding-right: 13px;
+}
+#avtr{
+    position: relative;
+    left: 450px;
 }
 .avtr-img {
     height: 290px;
@@ -22,9 +31,13 @@ a.social-icon-link {
     flex-direction: column;
     gap: 16px;
     padding-top: 55px;
+    position: relative;
+    left: -900px;
 }
 
 .desc{
+    position: relative;
+    left: -900px;
     line-height: 1.5rem;
     font-size: medium;
 }
