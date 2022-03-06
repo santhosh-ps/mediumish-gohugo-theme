@@ -1,3 +1,36 @@
+.portfolio-main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.name-section{
+    gap: 5rem;
+    margin-bottom: 10px;
+}
+a.social-icon-link {
+    padding-right: 13px;
+}
+.avtr-img {
+    height: 290px;
+}
+.headline {
+    color: #828091;
+    font-weight: 400;
+}
+.sub-tag{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 55px;
+}
+
+.desc{
+    line-height: 1.5rem;
+    font-size: medium;
+}
+.d-flex{
+    display: flex;
+}
 .index-main{
     display: flex;
     justify-content: center;
