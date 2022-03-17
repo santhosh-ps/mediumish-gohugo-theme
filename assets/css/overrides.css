@@ -15,10 +15,6 @@
 a.social-icon-link {
     padding-right: 13px;
 }
-#avtr{
-    position: relative;
-    left: 450px;
-}
 .avtr-img {
     height: 290px;
 }
@@ -26,6 +22,24 @@ a.social-icon-link {
     color: #828091;
     font-weight: 400;
 }
+
+@keyframes avtr-animation {
+    from {left: 450px;}
+    to {left: -80px;}
+  }
+#avtr{
+    position: relative;
+    left: 450px;
+    animation-name: avtr-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes subtag-animation {
+    from {left: -900px;}
+    to {left: 0px;}
+  }
+
 .sub-tag{
     display: flex;
     flex-direction: column;
@@ -33,13 +47,24 @@ a.social-icon-link {
     padding-top: 55px;
     position: relative;
     left: -900px;
+    animation-name: subtag-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 }
+
+@keyframes desc-animation {
+    from {left: -900px;}
+    to {left: 0px;}
+  }
 
 .desc{
     position: relative;
     left: -900px;
     line-height: 1.5rem;
     font-size: medium;
+    animation-name: subtag-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 }
 .d-flex{
     display: flex;

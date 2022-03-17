@@ -1,13 +1,4 @@
 {{ define "header"}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script>
-        window.onload = () => {
-            gsap.to("#avtr", {duration: 1, x: -530});
-            gsap.to(".sub-tag", {duration: 1, x: 900});
-            gsap.to(".desc", {duration: 1, x: 900});
-
-        }
-    </script>
     {{- partial "_shared/navbar.html" . -}}
 {{ end }}
 
@@ -37,7 +28,19 @@
             {{ . | markdownify }}
         </div>
         {{end}}
+        <!-- <div class="d-flex">
+            <div>
+                <a href="https://app.testdome.com/cert/ca927783d8c14f0fa50bca0e4f913897" class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Santhosh PS</span><span class="testdome-certificate-test-name">JavaScript </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+            </div>
+            <div>
+                <a href="https://app.testdome.com/cert/aebdb86fc58544bca41557f8a8469ec5" class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Santhosh PS</span><span class="testdome-certificate-test-name">Node.js </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+            </div>
+            <div>
+                <a href="https://app.testdome.com/cert/10e40e28e4564e4f9d2db4c2033d42ec" class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Santhosh PS</span><span class="testdome-certificate-test-name">SQL </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+            </div>
+        </div> -->
     </div>
+    
 {{end}}
 
 {{ define "footer" }}
