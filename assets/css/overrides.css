@@ -1,8 +1,7 @@
-@media screen and (max-width:640px) {
-    #avtr{
-       display: none;
-    }
+.avtr-circle {
+    display: none;
 }
+
 .portfolio-main {
     max-width: 960px;
     margin: 0 auto;
@@ -75,4 +74,16 @@ a.social-icon-link {
     align-items: center;
     flex-direction: column;
     height: 600px;
+}
+@media screen and (max-width:640px) {
+    #avtr{
+       display: none;
+    }
+    .avtr-circle {
+        display: block;
+    }
+    .sub-tag{
+        padding-top: 15px;
+        gap: 5px;
+    }
 }
